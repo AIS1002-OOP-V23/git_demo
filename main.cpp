@@ -1,15 +1,11 @@
-#include <iostream>
 
 #include "demo/person.hpp"
-
-void printHello(const person& p) {
-    std::cout << "Hello, " << p.get_name() << "!" << std::endl;
-}
+#include "demo/person_greeter.hpp"
 
 int main() {
-    person p("per");
 
-    printHello(p);
+    person p("per");
+    greet(p);
 
     return 0;
 }
