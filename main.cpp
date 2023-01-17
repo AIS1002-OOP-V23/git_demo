@@ -1,10 +1,15 @@
 #include <iostream>
 
-void printHello() {
-    std::cout << "Hello, World!" << std::endl;
+#include "demo/person.hpp"
+
+void printHello(const person& p) {
+    std::cout << "Hello, " << p.get_name() << "!" << std::endl;
 }
 
 int main() {
-    printHello();
+    person p("per");
+
+    printHello(p);
+
     return 0;
 }
