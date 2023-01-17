@@ -7,7 +7,7 @@
 class person {
 
 public:
-    person(const std::string& name);
+    explicit person(const std::string& name);
 
     std::string get_name() const;
 
