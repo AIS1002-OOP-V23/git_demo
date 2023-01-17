@@ -1,6 +1,10 @@
 #include <iostream>
 
+void printHello() {
+    std::cout << "Hello, World!" << std::endl;
+}
+
 int main() {
-    std::cout << "Hello, Universe!" << std::endl;
+    printHello();
     return 0;
 }
